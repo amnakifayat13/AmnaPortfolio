@@ -10,7 +10,7 @@ export default function Services(){
                 {servicesData.map((service)=>{
                     return(
                         <div key={service.id}
-                        data-aos ="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="150" >
+                        >
                             
                             <ServiceCard service ={service}/>
                         </div>

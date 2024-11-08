@@ -1,14 +1,14 @@
 "use client"
-import Image from "next/image"
+
 import Link from "next/link"
 import { navLinks } from "../../../../../constant/constant"
 import { HiBars3BottomRight } from "react-icons/hi2"
 import { useState, useEffect} from "react"
 // define props types
-type props ={
+type Props ={
     openNav:()=>void
 }
-export default function Nav({openNav}:props){
+export default function Nav({openNav}:Props){
     const [navBg, setNavBg]= useState(false);
     useEffect(() =>{
         const handler = ()=>{
@@ -38,7 +38,7 @@ export default function Nav({openNav}:props){
                         
                             {navLinks.map((navLink)=>{
                         return(
-                        <Link key={navLink.id} href={navLink.url}>
+                        <Link key={navLink.id} href={navLink.url } scroll={false}>
                             <p className="nav__link">{navLink.label}</p>
                         </Link>
                         )
@@ -48,7 +48,8 @@ export default function Nav({openNav}:props){
                     <div className="flex items-center space-x-4">
                         <button className="md:px-10 md:py-3 px-8 py-3 text-blue-800  font-semibold sm:text-base
                         bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg">
-                            Hire me
+                            <a href="mailto:hayatullahamna@gmail.com"> Hire me</a>
+                           
                         </button>
                         {/* burger menu */}
                         <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-white lg:hidden"/>

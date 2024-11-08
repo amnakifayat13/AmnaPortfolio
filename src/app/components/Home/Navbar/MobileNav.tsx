@@ -3,13 +3,13 @@ import Link from "next/link"
 import { CgClose } from "react-icons/cg"
 // props type
 
-type props = {
+type Props = {
     showNav:boolean;
     closeNav :()=> void
 
 }
 
-export default function MobileNav({closeNav,showNav} :props){
+export default function MobileNav({closeNav,showNav} :Props){
 
     const navOpen = showNav? "translate-x-0" : "translate-x-[-100%]";
     return(

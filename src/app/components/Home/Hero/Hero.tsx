@@ -19,12 +19,16 @@ export default function Hero (){
                             <button data-aos = "zoom-in " data-aos-delay="300" 
                             className="md:px-8 md:py-2.5 px-6 py-1.5 text-white text-sm font-semibold md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700
                              hover:bg-blue-950 flex items-center space-x-2">
-                                <span>Download CV</span>
+                                <span><a href={"https://my-resume-83xg.vercel.app/"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
+                                    Download CV</a></span>
                                 <FaDownload/>
                             </button>
                 </div>
                 {/* Image content */}
-                <div data-aos = "zoom-in " data-aos-delay="400" 
+                <div 
                  className="mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-x-hidden">
                     <Image src={BaseInfo.profilePic} alt={BaseInfo.name} width={300} height={350}/>
                 </div>

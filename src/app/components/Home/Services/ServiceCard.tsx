@@ -1,9 +1,7 @@
 "use client"
 
-import { PropsWithRef } from "react";
-import Image from "next/image"
-import {servicesData} from "../../../Data/data"
 
+import Image from "next/image"
 import Tilt from "react-parallax-tilt"
 
 type Props ={
