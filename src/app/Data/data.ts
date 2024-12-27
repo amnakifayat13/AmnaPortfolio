@@ -92,10 +92,21 @@ export const BaseInfo = {
       image: "/images/img5.png",
       url: "https://planto-website.vercel.app/",
     },
+    
     {
-      id: 5,
-      image: "/images/img6.png",
-      url: "https://fashionwebsite-ybzk.vercel.app/",
+      id: 6,
+      image: "/images/img7.png",
+      url: "https://figma-hackathone-prac.vercel.app/",
+    },
+    {
+      id: 7,
+      image: "/images/img8.png",
+      url: "https://ecom-hackathone-on5k.vercel.app/",
+    },
+    {
+      id: 8,
+      image: "/images/img9.png",
+      url: "https://habibi-mart-cwyq.vercel.app/",
     },
     
   ];
@@ -103,9 +114,9 @@ export const BaseInfo = {
   export const skillsData = [
     {
       id: 1,
-      title: "React",
+      title: "Next.Js",
       image: "/images/react.svg",
-      percent: "50%",
+      percent: "65%",
     },
     {
       id: 2,
