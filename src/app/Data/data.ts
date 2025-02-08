@@ -101,7 +101,7 @@ export const BaseInfo = {
     {
       id: 7,
       image: "/images/img8.png",
-      url: "https://ecom-hackathone-on5k.vercel.app/",
+      url: "https://ecom-hackathone-prqe.vercel.app/",
     },
     {
       id: 8,
